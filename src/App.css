@@ -1,0 +1,76 @@
+/* src/App.css veya uygun bir CSS dosyasına ekleyin */
+
+
+/* Tıklanabilir Link stilinde görünmesini sağlar */
+.topic-link {
+  text-decoration: none;
+  color: inherit; /* Mevcut tema rengiyle uyumlu olur */
+  display: block;
+  width: 100%;
+}
+
+
+
+
+/* Açıklama stili */
+
+/* Tema: Hafif ve Modern */
+body {
+  background-color: #f8f9fa; /* Arka Plan Rengi */
+  color: #343a40; /* Metin Rengi */
+}
+
+.topic-item {
+  background-color: #ffffff; /* Beyaz arka plan */
+  border: 1px solid #dee2e6; /* Hafif Gri Kenar */
+  transition: background-color 0.3s ease;
+}
+
+.topic-item:hover {
+  background-color: #e9ecef; /* Hover sırasında daha koyu gri */
+}
+
+.topic-content h5 {
+  color: #007bff; /* Ana Renk */
+}
+
+.topic-content p {
+  color: #6c757d; /* Açık Gri */
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #212529;
+    color: #f8f9fa;
+  }
+
+  .topic-item {
+    background-color: #343a40;
+    border-color: #495057;
+  }
+
+  .topic-item:hover {
+    background-color: #495057;
+  }
+
+  .topic-content h5 {
+    color: #17a2b8; /* Turkuaz (İkincil Renk) */
+  }
+
+  .topic-content p {
+    color: #adb5bd;
+  }
+}
+/* src/App.css */
+@keyframes hoverEffect {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.topic-item:hover {
+  animation: hoverEffect 0.3s forwards;
+}
+
